@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}Anasayfa{% endblock title %}
+
+{% block content %}
+    <div class="start-menu">
+        <h1 style="font-weight: 700; font-size: 6.5vh; color: rgba(255, 255, 255, 0.8);">Eğitime yöne verecek olan</h1>
+        <h1 style="font-weight: 700; font-size: 6.5vh; color: rgba(255, 255, 255, 0.8); margin-bottom:8vh;"><span>GAIT Asistanları</span> ile tanışın.</h1>
+        <h5 style="padding: 2vh 0 2vh 0;"><a href="/egitim">BAŞLA <i class="fa-solid fa-angle-right"></i></a></h5>
+    </div>
+
+    <div class="show">
+        <h1><span>Kullanışlı</span> ve <span>Anlaşılabilir</span> Tasarım</h1>
+        <h6>Asistanlara sorularınızı rahat ve kolayca sorabilmeniz için oluşturulmuş bir tasarım ile sizlere kolaylık sağlıyoruz.</h6>
+        <div class="photo"><img src="../../../static/img/show.png" alt="asistant" width="900" style="margin-bottom:11vh;"></div>
+    </div>
+
+    <div class="features">
+        <h1>Özellikler</h1>
+        <h6>GAIT öğrencilere öğrenmeyi kolaylaştırmak için birbirinden iyi özellikler ile karşınızda.</h6>
+        <div class="boxes">
+            <div class="box">
+                <i class="fa-solid fa-robot"></i>
+                <h4>GAIT Asistanı</h4>
+                <div class="line"></div>
+                <p>Google Gemini yapay zeka modeliyle geliştirdiğimiz GAIT yapay zeka asistanı ile takıldığınız ve anlamadığınız veya merak ettiğiniz tüm konuları GAIT asistanına sorarak sorularınıza cevap bulabilirsiniz.</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-comment-dots"></i>
+                <h4>Gemini Destekli</h4>
+                <div class="line"></div>
+                <p>Google Gemini; Google AI tarafından geliştirilen, metin ve koddan oluşan büyük bir veri kümesi üzerinde eğitilmiş, çok dilli, çok modlu bir yapay zekâ modelidir. Gemini; metin oluşturma, dilleri çevirme, farklı türlerde yaratıcı içerikler yazma ve sorularınızı bilgilendirici bir şekilde yanıtlama gibi birçok görevde kullanılabilir.</p>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
+
+{% block script %}
+    <script src="static/js/script.js"></script>
+{% endblock script %}

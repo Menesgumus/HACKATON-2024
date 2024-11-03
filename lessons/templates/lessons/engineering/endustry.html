@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}Endüstri Mühendisliği{% endblock title %}
+
+{% block content %}
+    <div class="assistants">
+        <div class="chat">
+            <h4>GAIT Endüstri Müh. Asistanı</h4>
+            <form action="" id="chat-form" method="POST">
+                {% csrf_token %}
+                <div class="message-area">
+                    {% for sender,message in boxes %}
+                        <label>{{ message }}</label>
+                        <p>{{ sender }}</p>
+                    {% endfor %}
+                </div>
+                <div class="send-bar">
+                    <input type="text" id="send-area" name="send-area" autocomplete="off" placeholder="GAIT Asistanına Sor">
+                    <button id="buton"><i class="fa-solid fa-play"></i></button>
+                </div>
+            </form>
+        </div>
+        <div class="questions">
+            <h4>Merak Edebileceğiniz Sorular</h4>
+            <div class="question">
+                {% for question in questions %}
+                    <button onclick="send({{ forloop.counter }})">{{forloop.counter}}. <p class="buton">{{ question }}</p></button>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock content %}
+
+{% block script %}<script src="static/js/lessons.js"></script>{% endblock script %}

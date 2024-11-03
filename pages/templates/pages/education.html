@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}Eğitim{% endblock title %}
+
+
+{% block content %}
+    <div class="faculty" style="margin-top: 10vh;">
+        <h1><span>Fakülteler</span></h1>
+        <h6 id="top">Yapay zekalar, eğitimde öğrencilere özelleştirilmiş içerikler sunarak daha verimli bir öğrenme deneyimi sağlar. GAIT projesi, özellikle meslek yüksekokulu öğrencilerine yönelik geliştirilmiş yapay zeka asistanları ile bireysel ihtiyaçları analiz ederek rehberlik eder ve anında geri bildirim sunar. Ayrıca, öğretmenlere veri analizi ile öğrencilerin performansını izleme imkanı tanır. GAIT, eğitimde nitelikli bir deneyim sunarak öğrencilerin ve öğretmenlerin potansiyelini artırır, böylece geleceğin mühendislerini yetiştirmeye katkıda bulunur.</h6>
+        <div class="contents">
+            <div class="content" style="display: block;">
+                <div class="packages">
+                    <div class="package">
+                        <i class="fa-solid fa-wrench"></i>
+                        <h5>Mühendislik</h6>
+                        <span><a href="/muhendislik-fakultesi">Başla</a></span>
+                    </div>
+                    <div class="package">
+                        <i class="fa-solid fa-heart"></i>
+                        <h5>Sağlık</h6>
+                        <span><a href="/saglik-fakultesi">Başla</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
+
+

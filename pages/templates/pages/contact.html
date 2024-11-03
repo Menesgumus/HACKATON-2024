@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}İletişim{% endblock title %}
+
+{% block content %}
+    <div class="contact-menu">
+        <div class="header">
+            <h1>Bize Ulaşın</h1>
+            <p>Eğitimlerle ilgili herhangi bir sorun yaşadıysanız veya bizlere bildirmek istediğiniz bir durum varsa aşağıdaki formu doldurarak bizimle iletişime geçebilirsiniz!</p>
+        </div>
+        <form action="">
+            <div class="cols">
+                <div class="rows">
+                    <label for="">İsim:<span>*</span></label>
+                    <input type="text" required>
+                </div>
+                <div class="rows">
+                    <label for="">Soyisim:<span>*</span></label>
+                    <input type="text" required>
+                </div>
+            </div>
+            <div class="cols">
+                <label for="">E-posta:<span>*</span></label>
+                <input type="email" required>
+            </div>
+            <div class="cols">
+                <label for="">Telefon Numarası:</label>
+                <input type="text">
+            </div>
+            <div class="cols">
+                <label for="">Mesaj:<span>*</span></label>
+                <textarea name="contact-message" id="contact-message" required></textarea>
+            </div>
+            <button>Gönder</button>
+        </form>
+    </div>
+{% endblock content %}

@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}Sağlık{% endblock title %}
+
+
+
+{% block content %}
+    <div class="lessons" style="margin-top: 10vh;">
+        <h1><span>GAIT</span> Sağlık Asistanları</h1>
+        <h6 id="top">Sağlık alanı, bireylerin yaşam kalitesini artırmayı hedefleyen sürekli gelişen bir disiplindir. Tıbbi yenilikler ve teknolojik gelişmeler, hastalıkların teşhis ve tedavisinde önemli rol oynar.
+
+            GAIT Projesi, sağlık öğrencilerine yönelik yapay zeka asistanları ile onların eğitimini destekler. Bu asistanlar, öğrencilere teorik bilgilerini geliştirme ve pratik beceriler kazandırma imkanı sunarak, geleceğin sağlık profesyonellerini topluma en iyi şekilde hazırlamayı amaçlar.</h6>
+        <div class="contents">
+            <div class="content" style="display: block;">
+                <div class="packages">
+                    <div class="package">
+                        <i class="fa-solid fa-user-doctor"></i>
+                        <h5>Tıp</h6>
+                        <span><a href="/tip">Başla</a></span>
+                    </div>
+                    <div class="package">
+                        <i class="fa-solid fa-user-nurse"></i>
+                        <h5>Hemşirelik</h6>
+                        <span><a href="/hemsirelik">Başla</a></span>
+                    </div>
+                    <div class="package">
+                        <i class="fa-solid fa-tablets"></i>
+                        <h5>Eczacılık</h6>
+                        <span><a href="/eczacilik">Başla</a></span>
+                    </div>
+                    <div class="package">
+                        <i class="fa-solid fa-paw"></i>
+                        <h5>Veterinerlik</h6>
+                        <span><a href="/veterinerlik">Başla</a></span>
+                    </div>
+                    <div class="package">
+                        <i class="fa-solid fa-tooth"></i>
+                        <h5>Diş Hekimliği</h6>
+                        <span><a href="/dis-hekimligi">Başla</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
